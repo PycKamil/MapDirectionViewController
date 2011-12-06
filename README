@@ -1,0 +1,11 @@
+MapViewController is View Controller subclass that handle Google Directions  
+API.
+
+It provides draving route on map and step by step text navigation.
+
+Example use of this class is shown in MapDirectionsExample project.
+
+
+
+Enjoy to use it :)
+
