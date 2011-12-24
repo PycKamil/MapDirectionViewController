@@ -22,6 +22,23 @@
 {
     [super viewDidLoad];
     
+    //2 example points
+    MKPointAnnotation* startPoint = [[[MKPointAnnotation alloc] init] autorelease];
+    startPoint.title = @"Start Point";
+    startPoint.coordinate = CLLocationCoordinate2DMake(51.110, 17.031509);
+    
+    self.startPoint = startPoint;
+    
+    MKPointAnnotation* endPoint = [[[MKPointAnnotation alloc] init] autorelease];
+    endPoint.title = @"End Point";
+    endPoint.coordinate = CLLocationCoordinate2DMake(51.149, 17.030);
+    
+    self.endPoint = endPoint;
+    
+    
+    [self.mapView addAnnotation:self.startPoint];
+    [self.mapView addAnnotation:self.endPoint];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

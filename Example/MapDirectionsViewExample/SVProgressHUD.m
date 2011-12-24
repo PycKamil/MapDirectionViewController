@@ -74,7 +74,7 @@ static SVProgressHUD *sharedView = nil;
 
 + (void)showInView:(UIView*)view status:(NSString*)string networkIndicator:(BOOL)show posY:(CGFloat)posY maskType:(SVProgressHUDMaskType)maskType {
 	
-    BOOL addingToWindow;
+    BOOL addingToWindow = NO;
     
     if(!view) {
         UIWindow* keyWindow = [UIApplication sharedApplication].keyWindow;

@@ -73,22 +73,6 @@
     [directionsView release];
     
     
-    //2 example points
-    MKPointAnnotation* a = [[MKPointAnnotation alloc] init];
-    a.title = @"Start Point";
-    a.coordinate = CLLocationCoordinate2DMake(51.110, 17.031509);
-    
-    self.startPoint = a;
-    
-    MKPointAnnotation* b = [[MKPointAnnotation alloc] init];
-    b.title = @"End Point";
-    b.coordinate = CLLocationCoordinate2DMake(51.149, 17.030);
-    
-    self.endPoint = b;
-    
-    
-    [self.mapView addAnnotation:self.startPoint];
-    [self.mapView addAnnotation:self.endPoint];
 }
 
 
